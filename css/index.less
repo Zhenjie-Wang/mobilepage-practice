@@ -1,0 +1,145 @@
+@total-width   : 750;
+@html-font-size: 100vw / @total-width * 40;
+
+html {
+    font-size       : @html-font-size;
+    background-color: #eff0f4;
+}
+
+.w {
+    width : 693/40rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topbar-wrapper:extend(.w) {
+    height         : 175/40rem;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+
+    a {
+        color: #999999;
+
+        h1 {
+            color      : #24253d;
+            font-size  : 50/40rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.banner-wrapper:extend(.w) {
+    img {
+        width: 100%;
+    }
+}
+
+.menu-wrapper:extend(.w) {
+    // margin-top  : 40/40rem;
+    height         : 329/40rem;
+    display        : flex;
+    flex-flow      : row wrap;
+    justify-content: space-between;
+    align-content  : space-evenly;
+
+    a {
+        width        : 327/40rem;
+        height       : 104/40rem;
+        text-align   : center;
+        line-height  : 104/40rem;
+        color        : #ffffff;
+        border-radius: 20/40rem;
+
+        i {
+            padding-right: 20/40rem;
+        }
+    }
+
+    .course {
+        background-color: #f97053;
+    }
+
+    .speaker {
+        background-color: #cd6efe;
+    }
+
+    .subscription {
+        background-color: #fe4479;
+    }
+
+    .download {
+        background-color: #1bc4fb;
+    }
+}
+
+.items-wrapper:extend(.w) {
+    margin-bottom: 20/40rem;
+    
+    .items-title {
+        height         : 60/40rem;
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+
+        h2 {
+            font-size   : 32/40rem;
+            border-left : 6/40rem solid #e47d55;
+            padding-left: 12/40rem;
+        }
+
+        a {
+            color    : #6e6e6e;
+            font-size: 30/40rem;
+        }
+    }
+
+    .items-list {
+        padding-top: 20/40rem;
+        width      : 720/40rem;
+        display    : flex;
+        overflow: auto;
+
+        .item-block {
+            flex           : none;
+            box-sizing     : border-box;
+            border-radius  : 10/40rem;
+            width          : 326/40rem;
+            height         : 340/40rem;
+            padding        : 0 20/40rem;
+            margin-right   : 30/40rem;
+            box-shadow     : 0 0 10/40rem rgba(0, 0, 0, .3);
+            display        : flex;
+            flex-direction : column;
+            justify-content: space-evenly;
+
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                color      : #000000;
+                font-size  : 32/40rem;
+                font-weight: bold;
+            }
+
+            .user {
+                display    : flex;
+                align-items: center;
+
+                img {
+                    width       : 60/40rem;
+                    margin-right: 20/40rem;
+                }
+
+                span {
+                    color    : #24253d;
+                    font-size: 30/40rem;
+                }
+            }
+        }
+    }
+}
